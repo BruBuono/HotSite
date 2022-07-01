@@ -61,3 +61,10 @@ C:\Users\bruno\OneDrive\Documentos\curso_mod2\UC06\Atv1_BrunoFreitas\Projetohots
 C:\Users\bruno\OneDrive\Documentos\curso_mod2\UC06\Atv1_BrunoFreitas\Projetohotsite\obj\Debug\netcoreapp3.0\Hotsite.dll
 C:\Users\bruno\OneDrive\Documentos\curso_mod2\UC06\Atv1_BrunoFreitas\Projetohotsite\obj\Debug\netcoreapp3.0\Hotsite.pdb
 C:\Users\bruno\OneDrive\Documentos\curso_mod2\UC06\Atv1_BrunoFreitas\Projetohotsite\obj\Debug\netcoreapp3.0\Hotsite.genruntimeconfig.cache
+C:\Users\bruno\OneDrive\Documentos\curso_mod2\UC06\Atv1_BrunoFreitas\Projetohotsite\bin\Debug\netcoreapp3.0\Serilog.dll
+C:\Users\bruno\OneDrive\Documentos\curso_mod2\UC06\Atv1_BrunoFreitas\Projetohotsite\bin\Debug\netcoreapp3.0\Serilog.Extensions.Logging.dll
+C:\Users\bruno\OneDrive\Documentos\curso_mod2\UC06\Atv1_BrunoFreitas\Projetohotsite\bin\Debug\netcoreapp3.0\Serilog.Extensions.Logging.File.dll
+C:\Users\bruno\OneDrive\Documentos\curso_mod2\UC06\Atv1_BrunoFreitas\Projetohotsite\bin\Debug\netcoreapp3.0\Serilog.Formatting.Compact.dll
+C:\Users\bruno\OneDrive\Documentos\curso_mod2\UC06\Atv1_BrunoFreitas\Projetohotsite\bin\Debug\netcoreapp3.0\Serilog.Sinks.Async.dll
+C:\Users\bruno\OneDrive\Documentos\curso_mod2\UC06\Atv1_BrunoFreitas\Projetohotsite\bin\Debug\netcoreapp3.0\Serilog.Sinks.File.dll
+C:\Users\bruno\OneDrive\Documentos\curso_mod2\UC06\Atv1_BrunoFreitas\Projetohotsite\bin\Debug\netcoreapp3.0\Serilog.Sinks.RollingFile.dll
