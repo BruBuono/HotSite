@@ -26,8 +26,15 @@ namespace Hotsite.Controllers
         [HttpPost]
         public IActionResult Cadastrar(Interesse cad)
         {
-            DatabaseService dbs = new DatabaseService();
-            dbs.CadastraInteresse(cad);
+            try{
+                DatabaseService dbs = new DatabaseService();
+                dbs.CadastraInteresse(cad);
+                ViewData["Mensagem"]="Cadastro Realizado com sucesso!";
+            } catch(Exception e){
+                _logger.LogError("Erro ao gravar no banco " + e.Message);
+                ViewData["Mensagem"]="Erro ao cadastrar, tente mais tarde!!!";
+            }
+
             return View("Index",cad);
         }
 

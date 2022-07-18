@@ -2,42 +2,242 @@
 @{
     ViewData["Title"] = "Hotsite";
 }
+<div class="row">
 
-<div>
-    <h1>Iniciativa Saúde da Cidade</h1>
-    <p>
-        Texto sobre vida saudável: Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.
-    </p>
-    <p>
-        Texto sobre vida iniciativa: Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.
-    </p>
+    <div class=" col-md-5">
+        <div class="d-flex mb-5">
+
+            <div>
+                <h1>Iniciativa Saúde da Cidade</h1>
+                <h5>
+                    Texto sobre vida saudável: Lorem ipsum dolor sit amet et delectus accommodare his consul
+                    copiosae
+                    legendos
+                    at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.
+                </h5>
+                <h5>
+                    Texto sobre vida iniciativa: Lorem ipsum dolor sit amet et delectus accommodare his consul
+                    copiosae
+                    legendos
+                    at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.
+                </h5>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-7">
+        <div class="d-flex">
+            <div class="container d-flex justify-content-center">
+                <img src="imagens/pexels.jpg" class="max-width: 100%" width="594" height="406">
+            </div>
+        </div>
+    </div>
 </div>
 
-<div>
-    <h2>Entre em contato!:</h2>
-    <p>Nos mande uma mensagem e fique por dentro de nossos eventos</p>
+<div class="row">
+    <div class="col-md-5">
+        <div class="container border">
+            <div>
+                <h2>Entre em contato!:</h2>
+                <p>Nos mande uma mensagem e fique por dentro de nossos eventos</p>
+                <section id="esporte" class="borda">
 
-    <form action="/Home/Cadastrar" method="POST">
-        <div>
-            <label asp-for="Nome">Nome:</label>
-            <input asp-for="Nome" />
-        </div>
-        <div>
-            <label asp-for="Email">Email:</label>
-            <input asp-for="Email" />
-        </div>
-        <div>
-            <label asp-for="Mensagem">Mensagem (opcional):</label>
-            <textarea asp-for="Mensagem"></textarea>
-        </div>
-        <div>
-            <input type="submit" value="Enviar" />
-        </div>
-    </form>
-</div>
+                    <p class=" text-danger">@ViewData["Mensagem"]</p>
+                    <div class="container justify-content-md-center">
+                        <form action="/Home/Cadastrar" method="POST">
+                            <div class="form-group">
+                                <label asp-for="Nome">Nome:</label>
+                                <input asp-for="Nome" class="form-control" required />
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Email">Email:</label>
+                                <input asp-for="Email" class="form-control" required />
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Mensagem">Mensagem (opcional):</label>
+                                <textarea asp-for="Mensagem" class="form-control"></textarea>
+                            </div>
+                            <div>
+                                <input type="submit" value="Enviar" />
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
 
-<div>
-    <a href="#">Agenda de eventos</a>
-    <a href="#">Dicas de vida saudável</a>
-    <a href="#">Apoiadores</a>
+        </div>
+    </div>
+
+    <div class="col-md-7">
+        <div class="container d-flex justify-content-center p-5">
+
+            <div class="card mr-5" style="width:150px">
+                <img class="card-img-top" src="imagens/appointment.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <div class="container">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModalAgenda">
+                            Agenda de Eventos
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal" id="myModalAgenda">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header text-center">
+                                        <h4 class="modal-title">Nossa Agenda</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body text-center">
+                                        Dia 10/10/2022 - Evento 1 - 12hs<br><br>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut odio sem, dapibus
+                                        ultricies imperdiet sed.<br><br>
+                                        Dia 24/12/2022 - Evento de Natal - 20hs<br><br>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut odio sem, dapibus
+                                        ultricies imperdiet sed<br><br>
+                                        Dia 31/12/3022 - Evento de Ano Novo - 21hs <br><br>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut odio sem, dapibus
+                                        ultricies imperdiet sed, tri<br>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="card mr-5" style="width:150px">
+                <img class="card-img-top" src="imagens/healthy.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <div class="container">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModalSaude">
+                            Dicas de Vida Saudável
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal" id="myModalSaude">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Dicas de Vida Saudável</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut odio sem, dapibus
+                                        ultricies imperdiet sed, tristique at metus. Phasellus elementum consequat quam,
+                                        nec bibendum lectus sollicitudin at. Duis eu tortor vel neque viverra semper.
+                                        Donec rutrum dictum vestibulum. Vestibulum in diam magna. Ut urna sem, interdum
+                                        luctus nulla congue, faucibus auctor nisi. Integer felis augue, ultricies et
+                                        vehicula quis, maximus vel ipsum. Nulla ullamcorper viverra tellus, at auctor
+                                        est viverra ut. Sed blandit dolor diam, molestie rhoncus sem fermentum vel.
+                                        Pellentesque eros felis, ornare ut congue et, egestas at tortor. Praesent ornare
+                                        ac sem quis lobortis. Suspendisse in diam a mauris porta tempus in vitae quam.
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="card" style="width:150px">
+                <img class="card-img-top" src="imagens/support.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <div class="container">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModalApoiadores">
+                            Apoiadores
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal" id="myModalApoiadores">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Apoiadores</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+
+                                        <div class="container d-flex">
+                                            <div class="mx-3">
+                                                <img src="/imagens/dream.jpg">
+                                            </div>
+                                            <div>
+                                                <h4>DREAM</h4>
+                                                <h6>Descrição</h6>
+                                            </div>
+                                        </div>
+                                        <div class="container d-flex">
+                                            <div class="mx-3">
+                                                <img src="/imagens/goed.jpg">
+                                            </div>
+                                            <div>
+                                                <h4>GOED</h4>
+                                                <h6>Descrição</h6>
+                                            </div>
+                                        </div>
+                                        <div class="container d-flex">
+                                            <div class="mx-3">
+                                                <img src="/imagens/apple.jpg">
+                                            </div>
+                                            <div>
+                                                <h4>APPLE</h4>
+                                                <h6>Descrição</h6>
+                                            </div>
+                                        </div>
+                                        <div class="container d-flex">
+                                            <div class="mx-3">
+                                                <img src="/imagens/taksi.jpg">
+                                            </div>
+                                            <div>
+                                                <h4>TAKSI</h4>
+                                                <h6>Descrição</h6>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
 </div>
